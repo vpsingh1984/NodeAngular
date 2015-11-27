@@ -1,0 +1,31 @@
+<!-- <div class="jumbotron text-center">
+  <h1>About Page</h1>
+
+  <p>{{ message }}</p>
+</div> -->
+<div class="container" ng-controller="AppCtrl">
+	<div class="col-sm-12">
+		<table class="table table-border">
+			<thead>
+				<tr>
+					<th>Name </th>
+					<th>Email </th>
+					<th>Number </th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="text" class="form-control" ng-model="contact.name" ng-readonly="false"></td>
+					<td><input type="text" class="form-control" ng-model="contact.email"></td>
+					<td><input type="text" class="form-control" ng-model="contact.number"></td>
+					<td>
+						<button class="btn btn-primary" ng-click="addContact()">Add Contact</button>
+						<button class="btn btn-info" ng-click="update()">Update</button>
+						<button class="btn btn-info" ng-click="clear()">Clear</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,39 @@
+	[{
+		"maruti"
+		"modals":
+			{
+				"modals":
+					[
+						{ "Maruti Suzuki" },
+						{ "Alto 800" },
+						{ "Swift Dezire" },
+						{ "Baleno" }
+					]
+			}
+	},
+	{
+		"Honda"
+		"modals":
+			{
+				"modals":
+					[
+						{ "Honda Amage" },
+						{ "Honda City" },
+						{ "Civic" },
+						{ "Honda 001" }
+					]
+			}
+	},
+	{
+		"toyota"
+		"modals":
+			{
+				"modals":
+					[
+						{ "Fortuner" },
+						{ "Toyota 001" },
+						{ "Toyota 002" },
+						{ "Toyota 003" }
+					]
+			}
+	}]
