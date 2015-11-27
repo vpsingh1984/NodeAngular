@@ -4,13 +4,13 @@
   <p>{{ message }}</p>
 </div> -->
 
-<div class="container" ng-controller="AppCtrl">
+<div class="container">
 	<div class="col-sm-12" style="margin-top:0px;">
 		<h3>Cars List</h3>
 		<table class="table table-border">
 			<tbody>
 				<tr ng-repeat= "cars in carlist">
-		    	<td>{{cars}}</td>
+		    	<td>{{cars.cars}}</td>
 		      <td>
 		      	<button class="btn btn-danger" ng-click="remove(contact._id)">Remove</button>
 		      	<button class="btn btn-warning" ng-click="edit(contact._id)">Edit</button>

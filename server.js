@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require("method-override");
 var path = require("path");
 var mongojs = require('mongojs');
-var db = mongojs('contactlist', ['contactlist']);
+var db = mongojs('myContactlist', ['contactlist', 'carlist']);
 //var mongoose = require("mongoose");
 
 var app = express();
@@ -65,9 +65,9 @@ app.put('/contactlist/:id', function(req, res){
 });
 
 
-app.get('/cars', function(req, res){
+app.get('/carlist', function(req, res){
 	console.log(req);
-	db.cars.find(function(err, docs){
+	db.carlist.find(function(err, docs){
 		console.log(docs);
 		res.json(docs);
 	});

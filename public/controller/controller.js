@@ -64,13 +64,12 @@ scotchApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http){
 			$scope.contact = " ";
 		};
 
-		var cars = function(){
-			$http.get('../services/cars.json').success(function(response){
-				console.log('I got the response');
-				console.log(response);
-				$scope.carlist = response;
-			});
-		};
-		cars();
+		// var carRefresh = function(){
+		// 	$http.get('/cars').success(function(response){
+		// 		console.log('I got the response');
+		// 		$scope.carlist = response;
+		// 	});
+		// };
+		// carRefresh();
 
 }]);
